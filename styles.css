@@ -1945,18 +1945,14 @@ p {
     border-radius: 50%;
 }
 
-/* Desktop/Mobile text handling */
-.mobile-text {
-    display: none;
-}
-
-/* Only apply mobile text to header button */
+/* Mobile header button text */
 @media (max-width: 991px) {
-    header .mobile-text {
-        display: inline;
+    .header-cta {
+        font-size: 0 !important;
     }
-    header .desktop-text {
-        display: none;
+    .header-cta::after {
+        content: 'BOOK NOW';
+        font-size: 1rem;
     }
 }
 
