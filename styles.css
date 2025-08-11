@@ -1945,14 +1945,12 @@ p {
     border-radius: 50%;
 }
 
-/* Mobile header button text */
+/* Desktop/Mobile visibility helpers for header CTA only */
+.desktop-only { display: inline; }
+.mobile-only { display: none; }
 @media (max-width: 991px) {
-    .header-cta {
-        font-size: 0 !important;
-    }
-    .header-cta::after {
-        content: 'BOOK NOW';
-        font-size: 1rem;
-    }
+  header .desktop-only { display: none; }
+  header .mobile-only { display: inline; }
 }
+
 
