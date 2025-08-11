@@ -1950,11 +1950,12 @@ p {
     display: none;
 }
 
+/* Only apply mobile text to header button */
 @media (max-width: 991px) {
-    .mobile-text {
+    .header .mobile-text {
         display: inline;
     }
-    .desktop-text {
+    .header .desktop-text {
         display: none;
     }
 }
