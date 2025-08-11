@@ -1952,10 +1952,10 @@ p {
 
 /* Only apply mobile text to header button */
 @media (max-width: 991px) {
-    .header .mobile-text {
+    header .mobile-text {
         display: inline;
     }
-    .header .desktop-text {
+    header .desktop-text {
         display: none;
     }
 }
