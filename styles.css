@@ -1945,3 +1945,17 @@ p {
     border-radius: 50%;
 }
 
+/* Desktop/Mobile text handling */
+.mobile-text {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-text {
+        display: inline;
+    }
+    .desktop-text {
+        display: none;
+    }
+}
+
