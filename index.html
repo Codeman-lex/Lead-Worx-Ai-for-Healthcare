@@ -32,8 +32,16 @@
 
     <link rel="stylesheet" href="styles.css">
     <!-- Wistia Embed Script -->
-    <script src="https://fast.wistia.com/embed/medias/REPLACE_WITH_VIDEO_ID.jsonp" async></script>
-    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/c5suobwacz.js" async type="module"></script>
+    <style>
+        wistia-player[media-id='c5suobwacz']:not(:defined) {
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/c5suobwacz/swatch');
+            display: block;
+            filter: blur(5px);
+            padding-top:56.25%;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -89,22 +97,7 @@
                 </div>
                 <div class="hero-right">
                     <div class="video-container">
-                        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-                            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                <div class="wistia_embed wistia_async_REPLACE_WITH_VIDEO_ID videoFoam=true" style="height:100%;position:relative;width:100%">
-                                    <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                                        <img src="./assets/hero-poster.jpg" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video-play-overlay">
-                            <button class="play-button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M8 5v14l11-7z" fill="white"/>
-                                </svg>
-                            </button>
-                        </div>
+                        <wistia-player media-id="c5suobwacz" aspect="1.7777777777777777"></wistia-player>
                     </div>
                 </div>
             </div>
