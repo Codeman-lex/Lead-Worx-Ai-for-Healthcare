@@ -113,8 +113,8 @@ p {
 }
 
 .btn-large {
-    padding: 1.125rem 3rem;
-    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
 }
 
 .btn-xl {
@@ -197,6 +197,16 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.header-cta {
+    padding: 0.3rem 1rem !important;
+    font-size: 0.75rem !important;
+}
+
+.btn.header-cta {
+    padding: 0.3rem 1rem !important;
+    font-size: 0.75rem !important;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -276,7 +286,8 @@ p {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     line-height: 1.2;
-    max-width: 90%;
+    max-width: 95%;
+    text-transform: capitalize;
 }
 
 /* Mobile-specific text display */
@@ -304,8 +315,49 @@ p {
     }
     
     .mobile-hero-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         line-height: 1.3;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.7rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-badge .badge-icon {
+        font-size: 0.7rem;
+    }
+    
+    .hero-cta-group {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .trust-indicators {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .btn-large {
+        padding: 0.875rem 2.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-xl {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+    
+    .btn-primary {
+        padding: 0.75rem 2rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -355,15 +407,17 @@ p {
 
 .trust-text {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
 }
 
 .trust-rating {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    justify-content: flex-start;
+    margin-bottom: 0.25rem;
 }
 
 .stars {
@@ -381,6 +435,7 @@ p {
     color: #000000;
     font-size: 0.65rem;
     font-weight: 500;
+    display: block;
 }
 
 .video-container {
@@ -1695,6 +1750,13 @@ p {
 .medspa-text {
     color: #5D00B5;
     font-weight: 700;
+}
+
+/* Number Text Styling */
+.number-text {
+    font-family: 'Crimson Text', serif;
+    font-weight: 500;
+    color: #FFFFFF;
 }
 
 /* Statistics Section Enhancements */
