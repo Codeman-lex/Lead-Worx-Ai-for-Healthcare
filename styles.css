@@ -56,7 +56,7 @@ p {
 
 /* Container */
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -250,7 +250,6 @@ p {
     align-items: center;
     position: relative;
     z-index: 2;
-    max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -285,11 +284,10 @@ p {
     margin-bottom: 1.5rem;
     color: #FFFFFF;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 5rem;
-    line-height: 1.1;
-    max-width: 100%;
+    font-size: 3rem;
+    line-height: 1.2;
+    max-width: 95%;
     text-transform: capitalize;
-    text-align: left;
 }
 
 /* Mobile-specific text display */
@@ -317,7 +315,7 @@ p {
     }
     
     .mobile-hero-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.3;
         font-family: 'Playfair Display', serif;
         font-weight: 500;
@@ -1759,6 +1757,13 @@ p {
     font-family: 'Crimson Text', serif;
     font-weight: 500;
     color: #FFFFFF;
+}
+
+/* Desktop only - make number bold */
+@media (min-width: 769px) {
+    .number-text {
+        font-weight: 700;
+    }
 }
 
 /* Statistics Section Enhancements */
